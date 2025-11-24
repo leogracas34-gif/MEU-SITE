@@ -1,30 +1,14 @@
-/* --- JAVASCRIPT --- */
-       
-        const header = document.getElementById('main-header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('black-bg');
-            } else {
-                header.classList.remove('black-bg');
-            }
+// Teste de conexão
+console.log("O arquivo JS foi conectado com sucesso!");
+
+// Exemplo: Adicionar ação ao botão de teste
+document.addEventListener('DOMContentLoaded', () => {
+    const botao = document.querySelector('.btn-destaque');
+   
+    if(botao) {
+        botao.addEventListener('click', (e) => {
+            // Aqui você pode colocar o link do WhatsApp depois
+            alert("Redirecionando para o WhatsApp de atendimento...");
         });
-
-        function toggleMenu() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            if (mobileMenu.style.display === 'flex') {
-                mobileMenu.style.display = 'none';
-            } else {
-                mobileMenu.style.display = 'flex';
-            }
-        }
-
-        function scrollCarousel(elementId, scrollAmount) {
-            const container = document.getElementById(elementId);
-            container.scrollBy({
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
-        }
-    </script>
-</body>
-</html>
+    }
+});
