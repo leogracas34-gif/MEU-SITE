@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VL TVPlay - Sua TV via internet</title>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- Link CSS externo -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Conteúdo do site (header, seções, footer) permanece igual -->
+
+    <header id="main-header">
+        <div class="logo-container" onclick="window.scrollTo(0,0)">
+            <div class="logo">VLTV Play</div>
+            <div class="slogan">Sua TV via internet</div>
+        </div>
+        <nav class="nav-links">
+            <a href="#inicio">Início</a>
+            <a href="#filmes">Filmes</a>
+            <a href="#series">Séries</a>
+            <a href="#canais">Canais</a>
+            <a href="#planos">Planos</a>
+            <a href="https://wa.me/5531998491711?text=Olá,+gostaria+de+mais+informações+sobre+a+IPTV" target="_blank" class="nav-btn-contact">
+                <i class="fab fa-whatsapp"></i> Contato
+            </a>
+        </nav>
+        <div class="mobile-menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="mobile-nav">
+        <a href="#inicio" onclick="toggleMenu()">Início</a>
+        <a href="#filmes" onclick="toggleMenu()">Filmes</a>
+        <a href="#series" onclick="toggleMenu()">Séries</a>
+        <a href="#canais" onclick="toggleMenu()">Canais</a>
+        <a href="#planos" onclick="toggleMenu()">Planos</a>
+        <a href="https://wa.me/5531998491711?text=Olá,+gostaria+de+suporte" target="_blank">Suporte WhatsApp</a>
+    </div>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Entretenimento Sem Limites.</h1>
+            <p>Filmes, Séries e TV ao vivo em SD,HD,FULL HD e 4K. Teste agora e descubra a revolução do streaming.</p>
+            <div class="hero-buttons">
+                <a href="#planos" class="btn-main"><i class="fas fa-play"></i> Ver Planos</a>
+                <a href="#filmes" class="btn-secondary"><i class="fas fa-film"></i> Catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- As demais seções e footer seguem iguais -->
+
+    <!-- Link JS externo -->
+    <script src="js/script.js"></script>
+</body>
+</html>
